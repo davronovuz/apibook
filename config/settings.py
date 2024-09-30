@@ -143,9 +143,21 @@ USE_TZ = True
 
 
 
-STATIC_URL = 'static/'
+#local
+# STATIC_URL = '/static/'  # Statik fayllar uchun URL yo'li
+# STATIC_ROOT = BASE_DIR / 'staticfiles'  # Statik fayllar saqlanadigan katalog
+#
+#
+# MEDIA_URL = 'media/'
+# MEDIA_ROOT = BASE_DIR / 'media'
+
+#server
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/davrono4/davronovtest.uz/django/staticfiles'
+
 MEDIA_URL = 'media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = '/home/davrono4/davronovtest.uz/django/media'
+
 
 
 # Default primary key field type
